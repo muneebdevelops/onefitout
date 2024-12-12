@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Fit Out Under Development</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFFFFF;
+        }
+        .image-container {
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media (max-width: 430px) {
+            .image-container {
+                background-image: url('430x932.png');
+            }
+        }
+        @media (min-width: 431px) and (max-width: 1024px) {
+            .image-container {
+                background-image: url('1024x1366.png');
+            }
+        }
+        @media (min-width: 1025px) and (max-width: 1728px) {
+            .image-container {
+                background-image: url('1728x1140.png');
+            }
+        }
+        @media (min-width: 1729px) and (max-width: 1920px) {
+            .image-container {
+                background-image: url('1920x1080.png');
+            }
+        }
+        @media (min-width: 1921px) {
+            .image-container {
+                background-image: url('2560x1440.png');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container"></div>
+</body>
+</html>
